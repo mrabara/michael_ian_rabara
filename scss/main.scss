@@ -1,0 +1,267 @@
+@import 'config.scss';
+@import 'utilities.scss';
+
+body {
+  font-family: 'Hind Madurai', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  width: 90px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar a,
+.navbar .navbarCollapse {
+  margin: 0 2rem;
+}
+
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+
+    .header-content {
+      text-align: center;
+      padding-top: 10%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &-inner {
+    background: $bg-image no-repeat 17% 17% / cover;
+    height: 6rem;
+    border-bottom: 4px solid $main-color;
+    position: relative;
+  }
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+.over-lay {
+  background: rgba(63, 57, 77, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-inner {
+  background: rgba(63, 57, 77, 0.2);
+  top: 0;
+  left: 0;
+  height: 6rem;
+}
+
+#about {
+  margin-top: 2rem;
+}
+
+#about-a {
+  margin: 3rem 0;
+  height: 20rem;
+}
+
+#about-b {
+  height: 100vh;
+}
+
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      margin-top: 10px;
+    }
+
+    .bio-img {
+      width: 15rem;
+      margin-top: 2rem;
+      height: 15rem;
+      border-radius: 100%;
+      box-shadow: inset -1px 3px 5px 16px #ffffff, 2px 3px 4px 0px #1f87ff,
+        5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .bio {
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+      text-align: left;
+    }
+  }
+}
+
+// #resume-section-content {
+//   margin: 3rem 0;
+//   text-align: center;
+//   height: 5rem;
+// }
+
+ul.contact {
+  margin-left: 10rem;
+}
+
+#experience {
+  margin-top: 3rem;
+  margin-bottom: 6.2rem;
+}
+
+#skills {
+  margin-top: 15rem;
+}
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+  margin-top: 1rem;
+}
+
+.text-responsive-nav {
+  font-size: calc(10% + 1vw + 1vh);
+  margin-top: 1rem;
+}
+
+.text-responsive-content {
+  font-size: calc(100% + 1vw + 1vh);
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  opacity: 0.5;
+}
+
+.scroll-icon::before,
+.scroll-icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 50%;
+  border: 5px solid #1f87ff;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+// Footer
+#main-footer {
+  // background: $other-color;
+  color: #fff;
+  height: 5rem;
+  margin-top: 2rem;
+
+  .footer-content {
+    // display: flex;
+    // justify-content: space-between;
+    // height: 10rem;
+    // align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 1px #fff solid;
+      border-radius: 100%;
+      height: 2rem;
+      width: 2rem;
+      line-height: 15px;
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        background: $main-color;
+      }
+    }
+  }
+}
+
+.projects {
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.projects:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+@import 'media';

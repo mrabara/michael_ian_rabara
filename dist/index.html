@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Michael Ian Rabara | Web Developer</title>
+</head>
+<body>
+    <header  id="header-home">
+        <div class="over-lay">
+            <div class="container" >
+                <nav id="main-nav">
+                    <img src="img/logo.png" alt="My Portfolio" id="logo" />
+                    <ul>
+                      <li><a href="index.html" class="current text-responsive-nav">Home</a></li>
+                      <li><a href="about.html" class="text-responsive-nav">About</a></li>
+                      <li><a href="projects.html" class="text-responsive-nav">Projects</a></li>
+                      <li><a href="contact.html" class="text-responsive-nav">Contact</a></li>
+                    </ul>
+                  </nav>
+                <div class="header-content">
+                    <h1 class="text-responsive-content">What do i do?</h1>
+                    <h3 class="text-responsive-content">I do, <span class="text-typed text-warning"></span> </h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <a href="portfolio.html" class="btn-light mt-5">View My Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js" integrity="sha512-7IoDEsIJGxz/gNyJY/0LRtS45wDSvPFXGPuC7Fo4YueWMNOmWKMAllEqo2Im3pgOjeEwsOoieyliRgdkZnY0ow==" crossorigin="anonymous"></script>
+    <script>
+        var typed = new Typed(".text-typed", {
+            strings: [ 
+                        "Web Development", 
+                        "Web Designing", 
+                        "Wire Framing",
+                        "Mock ups",
+                        "Prototyping"
+                    ],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true,
+        });
+    </script>
+
+</body>
+</html>

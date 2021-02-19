@@ -1,0 +1,65 @@
+@media (max-width: 800px) {
+  // #header-home{
+  //     height: 30rem;
+  // }
+}
+
+@media (max-width: 500px) {
+  #header-home {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #header-inner {
+    height: 10rem;
+  }
+
+  .overlay-inner {
+    height: 10rem;
+  }
+
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5px;
+    }
+  }
+
+  #about {
+    margin-top: 2rem;
+  }
+
+  #experience {
+    margin-top: 30rem;
+  }
+
+  .text-responsive-content {
+    font-size: calc(40% + 1vw + 1vh);
+    margin-top: 1rem;
+  }
+
+  #header-content h1 {
+    font-size: calc(10% + 1vw + 1vh);
+  }
+
+  #main-footer {
+    height: 8rem;
+  }
+
+  .text-responsive-section-title {
+    font-size: calc(30% + 1vw + 1vh);
+  }
+
+  .text-responsive-subheadings {
+    font-size: calc(60% + 1vw + 1vh);
+  }
+
+  .bio {
+    margin-top: 1rem;
+  }
+}
