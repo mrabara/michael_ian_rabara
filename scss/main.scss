@@ -148,12 +148,6 @@ img {
   }
 }
 
-// #resume-section-content {
-//   margin: 3rem 0;
-//   text-align: center;
-//   height: 5rem;
-// }
-
 ul.contact {
   margin-left: 10rem;
 }
@@ -186,6 +180,7 @@ ul.contact {
   bottom: 1px;
   left: 50%;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .scroll-icon::before,
@@ -194,7 +189,7 @@ ul.contact {
   display: block;
   position: absolute;
   border: 50%;
-  border: 5px solid #1f87ff;
+  border: 5px solid #ffffff;
   left: -20px;
   right: -20px;
   top: -20px;
@@ -219,20 +214,19 @@ ul.contact {
   }
 }
 
+.contact-container {
+  min-height: 1200px;
+}
+
 // Footer
 #main-footer {
-  // background: $other-color;
   color: #fff;
-  height: 5rem;
-  margin-top: 2rem;
+  margin-top: 8rem;
+  position: relative;
 
   .footer-content {
-    // display: flex;
-    // justify-content: space-between;
-    // height: 10rem;
-    // align-items: center;
-
-    .social .fab {
+    .social .fab,
+    .social .fas {
       margin-right: 1rem;
       border: 1px #fff solid;
       border-radius: 100%;

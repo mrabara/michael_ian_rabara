@@ -200,7 +200,8 @@ ul.contact {
   position: absolute;
   bottom: 1px;
   left: 50%;
-  opacity: 0.5; }
+  opacity: 0.5;
+  cursor: pointer; }
 
 .scroll-icon::before,
 .scroll-icon::after {
@@ -208,7 +209,7 @@ ul.contact {
   display: block;
   position: absolute;
   border: 50%;
-  border: 5px solid #1f87ff;
+  border: 5px solid #ffffff;
   left: -20px;
   right: -20px;
   top: -20px;
@@ -226,11 +227,15 @@ ul.contact {
     transform: scale(1.2);
     opacity: 0; } }
 
+.contact-container {
+  min-height: 1200px; }
+
 #main-footer {
   color: #fff;
-  height: 5rem;
-  margin-top: 2rem; }
-  #main-footer .footer-content .social .fab {
+  margin-top: 8rem;
+  position: relative; }
+  #main-footer .footer-content .social .fab,
+  #main-footer .footer-content .social .fas {
     margin-right: 1rem;
     border: 1px #fff solid;
     border-radius: 100%;
@@ -240,7 +245,8 @@ ul.contact {
     text-align: center;
     padding: 0.5rem;
     cursor: pointer; }
-    #main-footer .footer-content .social .fab:hover {
+    #main-footer .footer-content .social .fab:hover,
+    #main-footer .footer-content .social .fas:hover {
       background: #ffbc00; }
 
 .projects {
