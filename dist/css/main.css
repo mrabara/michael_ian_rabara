@@ -182,9 +182,6 @@ ul.contact {
   margin-top: 5rem;
   margin-bottom: 6.2rem; }
 
-#skills {
-  margin-top: 15rem; }
-
 .text-responsive {
   font-size: calc(100% + 1vw + 1vh);
   margin-top: 1rem; }
@@ -232,7 +229,7 @@ ul.contact {
 
 #main-footer {
   color: #fff;
-  margin-top: 8rem;
+  margin-top: 5rem;
   position: relative; }
   #main-footer .footer-content .social .fab,
   #main-footer .footer-content .social .fas {
