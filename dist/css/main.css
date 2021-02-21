@@ -257,7 +257,13 @@ ul.contact {
 
 .projects:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+
+@media (max-width: 768px) {
+  #experience {
+    margin-top: 17rem; }
+  .text-responsive {
+    margin-top: 4.5rem; } }
 
 @media (max-width: 500px) {
   #header-home {
@@ -278,14 +284,15 @@ ul.contact {
   #about {
     margin-top: 2rem; }
   #experience {
-    margin-top: 30rem; }
+    margin-top: 25rem; }
   .text-responsive-content {
     font-size: calc(40% + 1vw + 1vh);
     margin-top: 1rem; }
   #header-content h1 {
     font-size: calc(10% + 1vw + 1vh); }
   #main-footer {
-    height: 8rem; }
+    height: 8rem;
+    bottom: 0; }
   .text-responsive-section-title {
     font-size: calc(30% + 1vw + 1vh); }
   .text-responsive-subheadings {
