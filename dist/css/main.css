@@ -291,8 +291,9 @@ ul.contact {
   #header-content h1 {
     font-size: calc(10% + 1vw + 1vh); }
   #main-footer {
-    height: 8rem;
-    bottom: 0; }
+    height: 12rem;
+    bottom: 0;
+    margin-bottom: 0; }
   .text-responsive-section-title {
     font-size: calc(30% + 1vw + 1vh); }
   .text-responsive-subheadings {
