@@ -179,7 +179,7 @@ ul.contact {
   margin-left: 10rem; }
 
 #experience {
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 6.2rem; }
 
 .text-responsive {
@@ -285,10 +285,8 @@ ul.contact {
   .bio .text-left {
     font-size: medium; }
   .contact-info {
-    font-size: smaller;
+    font-size: small;
     text-align: left; }
-  section #skills {
-    margin-top: 5rem; }
   .text-responsive {
     margin-top: 1rem; }
   .text-responsive-content {
@@ -306,3 +304,11 @@ ul.contact {
     font-size: calc(60% + 1vw + 1vh); }
   .bio {
     margin-top: 1rem; } }
+
+@media (max-width: 400px) {
+  .contact-info {
+    font-size: calc(5% + 1vw + 1vh); } }
+
+@media (max-width: 320px) {
+  .contact-info {
+    font-size: calc(1% + 1vw + 1vh); } }

@@ -47,12 +47,8 @@
   }
 
   .contact-info {
-    font-size: smaller;
+    font-size: small;
     text-align: left;
-  }
-
-  section #skills {
-    margin-top: 5rem;
   }
 
   .text-responsive {
@@ -84,5 +80,17 @@
 
   .bio {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-info {
+    font-size: calc(5% + 1vw + 1vh);
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-info {
+    font-size: calc(1% + 1vw + 1vh);
   }
 }
