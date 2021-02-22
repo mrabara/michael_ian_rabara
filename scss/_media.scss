@@ -94,3 +94,15 @@
     font-size: calc(1% + 1vw + 1vh);
   }
 }
+
+@media (max-height: 360px) {
+  #header-content {
+    height: 100vh;
+  }
+}
+
+// @media (max-height: 1920) {
+//   .contacts {
+//     min-height: 172px;
+//   }
+// }

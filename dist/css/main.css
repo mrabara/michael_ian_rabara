@@ -224,8 +224,11 @@ ul.contact {
     transform: scale(1.2);
     opacity: 0; } }
 
-.contact-container {
-  min-height: 1200px; }
+.contacts {
+  min-height: 735px; }
+
+.contacts .h3 {
+  margin-top: 10rem; }
 
 #main-footer {
   color: #fff;
@@ -312,3 +315,7 @@ ul.contact {
 @media (max-width: 320px) {
   .contact-info {
     font-size: calc(1% + 1vw + 1vh); } }
+
+@media (max-height: 360px) {
+  #header-content {
+    height: 100vh; } }
