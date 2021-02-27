@@ -6,6 +6,11 @@
   .text-responsive {
     margin-top: 4.5rem;
   }
+
+  .bio {
+    margin-top: 1rem;
+    border-style: none !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -80,6 +85,7 @@
 
   .bio {
     margin-top: 1rem;
+    border-style: none !important;
   }
 }
 
@@ -87,11 +93,21 @@
   .contact-info {
     font-size: calc(5% + 1vw + 1vh);
   }
+
+  .bio {
+    margin-top: 1rem;
+    border-style: none !important;
+  }
 }
 
 @media (max-width: 320px) {
   .contact-info {
     font-size: calc(1% + 1vw + 1vh);
+  }
+
+  .bio {
+    margin-top: 1rem;
+    border-style: none !important;
   }
 }
 

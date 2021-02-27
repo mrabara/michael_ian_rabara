@@ -21,7 +21,7 @@
 
 .btn-dark {
   color: #f4f4f4;
-  background-color: #333; }
+  background-color: #fcf8f3; }
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
@@ -42,8 +42,8 @@ a[class^='btn-'] {
   color: #fff; }
 
 .bg-dark {
-  background: #333;
-  color: #fff; }
+  background: #fcf8f3;
+  color: #000; }
 
 .bg-light {
   background: #f4f4f4;
@@ -63,18 +63,17 @@ a[class^='btn-'] {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #ffbc00;
+  background: #00a8cc;
   display: block;
   margin: 0 auto 1rem auto; }
 
 body {
-  font-family: 'Hind Madurai', sans-serif;
   line-height: 1.6;
   background: #fff; }
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #fcf8f3; }
 
 ul {
   list-style: none; }
@@ -112,13 +111,14 @@ img {
 #header-inner {
   background: url("../img/computers.png") no-repeat 17% 17%/cover;
   height: 6rem;
-  border-bottom: 4px solid #ffbc00;
+  border-bottom: 4px solid #00a8cc;
   position: relative; }
 
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  font-family: 'Poiret One', cursive; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -131,9 +131,12 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
-      border-color: #ccc; }
+      border-color: #00a8cc; }
     #main-nav a.current {
-      border-color: #ffbc00; }
+      border-color: #005082; }
+
+.header-content-heading {
+  font-family: 'Poiret One', cursive; }
 
 .over-lay {
   background: rgba(63, 57, 77, 0.2);
@@ -164,14 +167,13 @@ img {
   margin-top: 10px; }
 
 #about-a .bio-img {
-  width: 15rem;
-  margin-top: 2rem;
-  height: 15rem;
-  border-radius: 100%;
-  box-shadow: inset -1px 3px 5px 16px #ffffff, 2px 3px 4px 0px #1f87ff, 5px 5px 15px 5px rgba(0, 0, 0, 0.3); }
+  width: 20rem;
+  margin-top: 1.5rem;
+  height: 20rem;
+  border-radius: 50%; }
 
 #about-a .bio {
-  border-left: 3px solid #ffbc00;
+  border-left: 3px solid #00a8cc;
   padding: 0.8rem;
   text-align: left; }
 
@@ -192,6 +194,12 @@ ul.contact {
 
 .text-responsive-content {
   font-size: calc(100% + 1vw + 1vh); }
+
+.text-responsive-subheadings {
+  color: #005082; }
+
+.text-heading {
+  font-family: 'Poiret One', cursive; }
 
 .scroll-icon {
   position: absolute;
@@ -233,7 +241,8 @@ ul.contact {
 #main-footer {
   color: #fff;
   margin-top: 5rem;
-  position: relative; }
+  position: relative;
+  background-color: #005082; }
   #main-footer .footer-content .social .fab,
   #main-footer .footer-content .social .fas {
     margin-right: 1rem;
@@ -247,7 +256,7 @@ ul.contact {
     cursor: pointer; }
     #main-footer .footer-content .social .fab:hover,
     #main-footer .footer-content .social .fas:hover {
-      background: #ffbc00; }
+      background: #00a8cc; }
 
 .projects {
   border-radius: 4px;
@@ -259,11 +268,19 @@ ul.contact {
   transform: scale(1.05);
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
 
+.under-construction {
+  width: 40rem;
+  height: 30rem;
+  margin: 3.2rem auto; }
+
 @media (max-width: 768px) {
   #experience {
     margin-top: 17rem; }
   .text-responsive {
-    margin-top: 4.5rem; } }
+    margin-top: 4.5rem; }
+  .bio {
+    margin-top: 1rem;
+    border-style: none !important; } }
 
 @media (max-width: 500px) {
   #header-home {
@@ -306,15 +323,22 @@ ul.contact {
   .text-responsive-subheadings {
     font-size: calc(60% + 1vw + 1vh); }
   .bio {
-    margin-top: 1rem; } }
+    margin-top: 1rem;
+    border-style: none !important; } }
 
 @media (max-width: 400px) {
   .contact-info {
-    font-size: calc(5% + 1vw + 1vh); } }
+    font-size: calc(5% + 1vw + 1vh); }
+  .bio {
+    margin-top: 1rem;
+    border-style: none !important; } }
 
 @media (max-width: 320px) {
   .contact-info {
-    font-size: calc(1% + 1vw + 1vh); } }
+    font-size: calc(1% + 1vw + 1vh); }
+  .bio {
+    margin-top: 1rem;
+    border-style: none !important; } }
 
 @media (max-height: 360px) {
   #header-content {
