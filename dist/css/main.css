@@ -262,11 +262,42 @@ ul.contact {
   border-radius: 4px;
   background: #fff;
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
 
 .projects:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+
+.projects::before {
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 220%;
+  background: rgba(0, 168, 204, 0.9);
+  top: -50%;
+  left: -100%;
+  z-index: 1;
+  transform: rotate(25deg);
+  transform-origin: center top 0;
+  transition: 0.5s; }
+
+.projects:hover::before {
+  left: 45%; }
+
+.card-text {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: -100%;
+  color: #fff;
+  left: 0;
+  z-index: 2;
+  transition: 1.1s; }
+
+.card:hover .card-text {
+  top: 80px; }
 
 .under-construction {
   width: 40rem;
@@ -338,7 +369,12 @@ ul.contact {
     font-size: calc(1% + 1vw + 1vh); }
   .bio {
     margin-top: 1rem;
-    border-style: none !important; } }
+    border-style: none !important; }
+  .bio-img {
+    width: 4rem;
+    margin-top: 1.5rem;
+    height: 4rem;
+    border-radius: 50%; } }
 
 @media (max-height: 360px) {
   #header-content {
